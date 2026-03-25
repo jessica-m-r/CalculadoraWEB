@@ -1,0 +1,44 @@
+body{
+    background-color: #000000;
+    font-family: "Datatype";
+    font-size: 14px;
+    display: grid;
+    gap:10px;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: start;   
+}
+.sumas{
+    background-color: #6b6d74;
+    color:#fff;
+    padding: 1rem;
+    width: fit-content;
+    border-radius: 10%;
+    border: solid 1px #fdfdfd;
+}
+.calculadora{
+    background-color: #6b6d74;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10%;
+    border: solid #0e1b3f;
+    color:#fff
+}
+.seccion-numero{
+    display:grid;
+    grid-template-columns: auto auto;
+}
+.numero{
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+}
+
+.signos{
+    display: grid;
+    margin-left: 10px;
+    grid-template-columns: auto;
+}
+.pantalla-estilo{
+    width: fit-content;
+}

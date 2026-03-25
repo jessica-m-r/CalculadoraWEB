@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Juego</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Datatype:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="sumas">
+            <label for="pnum">Primer numero</label><br>
+            <input type="number" id="primerNumber" name="pnum"><br>
+            <label for="snum">Segundo numero</label><br>
+            <input type="number" id="segundoNumber" name="snum"><br>
+            <br>
+            <label for="res">Resultado</label><br>
+            <input type="text" name="res" id="resultado"><br><br>
+            <button onclick="sumaValores()">Sumar</button>
+            <p id="suma"></p>
+        </div>
+        <div class="calculadora">
+            <label for="calc">Calculadora</label><br>
+            <div>
+                <input type="text" id="pantalla" class="pantalla-estilo"><br>
+                <input type="text" id="pResultado" class="pantalla-estilo">
+            </div>
+            <div class="seccion-numero">
+                <div class="numero">
+                    <button onclick="add('1')">1</button>
+                    <button onclick="add('2')">2</button>
+                    <button onclick="add('3')">3</button>
+                
+                    <button onclick="add('4')">4</button>
+                    <button onclick="add('5')">5</button>
+                    <button onclick="add('6')">6</button>
+                
+                    <button onclick="add('7')">7</button>
+                    <button onclick="add('8')">8</button>
+                    <button onclick="add('9')">9</button>
+                
+                    <button onclick="add('0')">0</button>
+                </div>
+                
+                <div class="signos">
+                    <button onclick="add('+')">+</button>
+                    <button onclick="add('-')">-</button>
+                    <button onclick="add('*')">*</button>
+                    <button onclick="add('/')">/</button>
+                </div>
+                <div>
+                    <button onclick="resultado()">=</button>
+                    <button onclick="limpiar()">C</button>
+                </div>
+                  
+            </div>
+        </div>
+    <script src="juego.js"></script>
+    </body>
+</html>
