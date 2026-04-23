@@ -17,19 +17,7 @@ function add(n){
     }
     document.getElementById("pantalla").value = (b ? num1 + signo + entrada : entrada);
 }
-function limpiar(){
-    num1 = 0;
-    num2 = 0;
-    b = false;
-    entrada = '';
-    document.getElementById("pResultado").value = entrada;
-    document.getElementById("pantalla").value = '';
-}
-function sumaValores(){
-    let n1 = Number(document.getElementById("primerNumber").value);
-    let n2 = Number(document.getElementById("segundoNumber").value);
-    document.getElementById("resultado").value = n1 + n2;
-}
+
 function sumar(a, b){
     return a + b;
 }
@@ -62,4 +50,17 @@ function resultado(){
     num1 = res;
     num2 = 0;
     b = false;
+}
+function limpiar(){
+    num1 = 0;
+    num2 = 0;
+    b = false;
+    entrada = '';
+    document.getElementById("pResultado").value = entrada;
+    document.getElementById("pantalla").value = '';
+}
+function sumaValores(){
+    let n1 = Number(document.getElementById("primerNumber").value);
+    let n2 = Number(document.getElementById("segundoNumber").value);
+    document.getElementById("resultado").value = n1 + n2;
 }
